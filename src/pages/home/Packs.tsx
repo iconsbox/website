@@ -14,13 +14,13 @@ const Packs = () => {
             <GlassesOutlineIcon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <PlusSolidIcon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <MessageCircleIcon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <CloudIcon />
           </div>
           <div>
             <GlassesOutlineIcon />

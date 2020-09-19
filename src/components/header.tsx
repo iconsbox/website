@@ -4,7 +4,7 @@ import { jsx, useColorMode } from "theme-ui"
 import { Flex } from "@theme-ui/components"
 import { useRecoilValue } from "recoil"
 
-import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
+import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config"
 import { headerShowState } from "../Recoil/atoms"
 import ColorModeToggle from "./colormode-toggle"
 import Navigation from "./navigation"

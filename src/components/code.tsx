@@ -3,7 +3,7 @@ import React from "react"
 import Highlight, { defaultProps } from "prism-react-renderer"
 import loadable from "@loadable/component"
 import theme from "prism-react-renderer/themes/nightOwl"
-import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
+import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config"
 import { Language } from "../types"
 
 type CodeProps = {

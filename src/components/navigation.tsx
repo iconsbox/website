@@ -2,7 +2,7 @@
 import React from "react"
 import { jsx, Link as TLink } from "theme-ui"
 import { Link } from "gatsby"
-import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
+import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config"
 import replaceSlashes from "../utils/replaceSlashes"
 
 type NavigationProps = {

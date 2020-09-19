@@ -10,12 +10,13 @@ import Layout from "./layout"
 import Title from "./title"
 import Listing from "./listing"
 import List from "./list"
-import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
+import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config"
 import replaceSlashes from "../utils/replaceSlashes"
 import { headerShowState } from "../Recoil/atoms"
 import { PostsProps } from "../types"
-import Hero from "../pages/home/hero"
-import Packs from "../pages/home/packs"
+import Hero from "../pages/home/Hero"
+import Packs from "../pages/home/Packs"
+import Integrations from "../pages/home/Integrations"
 
 const Homepage = ({ posts }: PostsProps) => {
   const setHeaderShow = useSetRecoilState(headerShowState)
@@ -76,6 +77,8 @@ const Homepage = ({ posts }: PostsProps) => {
 
       <Packs />
 
+      <Integrations />
+
       <Title text="Blog Posts">
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>
           Read all posts
@@ -85,7 +88,7 @@ const Homepage = ({ posts }: PostsProps) => {
       <List>
         <Title text="Donate" />
         You can donate us with bitcoin and this address:
-        <div sx={{ color: "#B57BFF"}}>3BuDiSHazi66AADg6WDMj3DmbYwPvUijBK</div>
+        <div sx={{ color: "#B57BFF" }}>3BuDiSHazi66AADg6WDMj3DmbYwPvUijBK</div>
       </List>
     </Layout>
   )

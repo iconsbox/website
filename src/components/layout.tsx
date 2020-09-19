@@ -106,8 +106,8 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
                 transform: "scale(1.2)",
               },
               svg: {
-                width: "4rem !important",
-                height: "4rem !important",
+                width: "3.5rem !important",
+                height: "3.5rem !important",
                 willChange: "transform",
                 transition: "transform ease-in-out 0.3s",
               },

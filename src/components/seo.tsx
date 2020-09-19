@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { withPrefix } from "gatsby"
-import useSiteMetadata from "../hooks/use-site-metadata"
+import useSiteMetadata from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata"
 
 type SEOProps = {
   title?: string

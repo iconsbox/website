@@ -4,7 +4,7 @@ import { Box, Flex } from "@theme-ui/components"
 import kebabCase from "lodash.kebabcase"
 import { Link } from "gatsby"
 import Layout from "./layout"
-import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
+import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config"
 import SEO from "./seo"
 import replaceSlashes from "../utils/replaceSlashes"
 

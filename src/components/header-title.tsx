@@ -2,8 +2,8 @@
 import { Link } from "gatsby"
 import { jsx } from "theme-ui"
 import replaceSlashes from "../utils/replaceSlashes"
-import useSiteMetadata from "../hooks/use-site-metadata"
-import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
+import useSiteMetadata from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata"
+import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config"
 
 const HeaderTitle = () => {
   const { siteTitle } = useSiteMetadata()
