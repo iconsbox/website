@@ -92,7 +92,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
             },
             div: {
               width: "6rem !important",
-              height: "6rem !important",
+              height: "5.5rem !important",
               transition: "opacity ease-in-out 0.3s",
               willChange: "filter, opacity",
               display: "flex",
@@ -106,8 +106,8 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
                 transform: "scale(1.2)",
               },
               svg: {
-                width: "3.5rem !important",
-                height: "3.5rem !important",
+                width: "3rem !important",
+                height: "3rem !important",
                 willChange: "transform",
                 transition: "transform ease-in-out 0.3s",
               },
@@ -168,6 +168,31 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           left: "22px",
           background: "#ff5f56",
           boxShadow: "16px 0px 0px #ffbd2e, 32px 0px 0px #27c93f",
+        },
+        ".integrations": {
+          marginTop: "-2rem !important",
+          ".icons-holder": {
+            alignItems: `center`,
+            justifyContent: `space-between`,
+            flexFlow: `wrap`,
+            div: {
+              background: "#fff",
+              boxShadow: "0 4px 22px -11px rgba(0,0,0,0.2)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "6rem",
+              flex: "0 0 calc(33.33% - 0.5rem)",
+              borderRadius: "1.6rem",
+              margin: "0.4rem 0",
+              color: "#333",
+              userSelect: "none",
+              svg: {
+                width: "2.5rem !important",
+                height: "2.5rem !important",
+              },
+            },
+          },
         },
       })}
     />
