@@ -1,0 +1,98 @@
+{
+  "private": true,
+  "name": "minimal-blog",
+  "description": "Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.",
+  "version": "1.1.7",
+  "author": "LekoArts <hello@lekoarts.de>",
+  "license": "MIT",
+  "starter-name": "gatsby-starter-minimal-blog",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/sayjeyhi/sayjeyhi.com",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
+    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+    "test": "echo \"Will write tests! :) -> https://gatsby.dev/unit-testing\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@iconbox/alexandra": "^1.0.5",
+    "@iconbox/clothes": "^1.0.5",
+    "@iconbox/config": "^1.0.5",
+    "@iconbox/eid": "^1.0.5",
+    "@iconbox/emoji": "^1.0.5",
+    "@iconbox/eva": "^1.0.5",
+    "@iconbox/fa4": "^1.0.5",
+    "@iconbox/fa5": "^1.0.5",
+    "@iconbox/feather": "^1.0.5",
+    "@iconbox/foundation": "^1.0.5",
+    "@iconbox/icomoon": "^1.0.5",
+    "@iconbox/iconly": "^1.0.5",
+    "@iconbox/ion": "^1.0.5",
+    "@iconbox/linear": "^1.0.5",
+    "@iconbox/material": "^1.0.5",
+    "@iconbox/oct": "^1.0.5",
+    "@iconbox/rainbow": "^1.0.5",
+    "@iconbox/snappmarket": "^1.0.5",
+    "@iconbox/support": "^1.0.5",
+    "@iconbox/tabler": "^1.0.5",
+    "@iconbox/weather": "^1.0.5",
+    "@lekoarts/gatsby-theme-minimal-blog": "^2.4.0",
+    "@n8tb1t/use-scroll-position": "^1.0.47",
+    "gatsby": "^2.24.3",
+    "gatsby-plugin-google-analytics": "^2.3.11",
+    "gatsby-plugin-manifest": "^2.4.18",
+    "gatsby-plugin-mdx": "latest",
+    "gatsby-plugin-netlify": "^2.3.11",
+    "gatsby-plugin-offline": "^3.2.18",
+    "gatsby-plugin-sitemap": "^2.4.11",
+    "gatsby-plugin-typography": "^2.5.10",
+    "gh-pages": "^3.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-typography": "^0.16.19",
+    "recoil": "^0.0.13",
+    "typeface-inter": "^3.15.0",
+    "typeface-lalezarregular": "^1.0.1",
+    "typeface-vazir": "^1.0.1",
+    "typeface-yekan": "^1.0.11",
+    "typography": "^0.16.19",
+    "use-scroll-position": "^0.0.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-webpack": "^0.12.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.8"
+  },
+  "moduleRoots": [
+    "app"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add --force"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add --force"
+    ]
+  },
+  "pre-commit": "lint:staged",
+  "eslintIgnore": [
+    "*.test.js",
+    "*.config.js",
+    "internals"
+  ]
+}
