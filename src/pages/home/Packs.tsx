@@ -1,9 +1,33 @@
 /** @jsx jsx */
 import React from "react"
 import { jsx } from "theme-ui"
-import { GlassesOutlineIcon } from "@iconbox/ion"
-import { CloudIcon, MessageCircleIcon } from "@iconbox/feather"
-import { PlusSolidIcon } from "@iconbox/fa5"
+
+import {
+  ImagePicture2Icon,
+  CloudConnectionIcon,
+  DirectoryArrowDownIcon,
+  CoffeeIcon,
+  CenterObjectIcon,
+  Drink2Icon,
+  CartDownRoundIcon,
+  DirectoryMissing3Icon,
+  EmojiSadCircle5Icon,
+  CloudsIcon,
+  Desktop3Icon,
+  EmojiSad32Icon,
+  EmojiNeutralSquareGlasses4Icon,
+  Bookmark6Icon,
+  DirectoryFavoriteIcon,
+  ClickTouchPress2Icon,
+  Camera3Icon,
+  FilePsd2Icon,
+  Cup3Icon,
+  CloudPlus2Icon,
+  File3Icon,
+  Bookmark7Icon,
+  FileMissingMinusIcon,
+  Done2Icon,
+} from "@iconbox/alexandra"
 
 const Packs = () => {
   return (
@@ -11,76 +35,76 @@ const Packs = () => {
       <div className="packs">
         <div className="content">
           <div>
-            <GlassesOutlineIcon />
+            <ImagePicture2Icon />
           </div>
           <div>
-            <PlusSolidIcon />
+            <CloudConnectionIcon />
           </div>
           <div>
-            <MessageCircleIcon />
+            <DirectoryArrowDownIcon />
           </div>
           <div>
-            <CloudIcon />
+            <CoffeeIcon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <CenterObjectIcon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <Drink2Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <CartDownRoundIcon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <DirectoryMissing3Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <EmojiSadCircle5Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <CloudsIcon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <Desktop3Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <EmojiSad32Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <EmojiNeutralSquareGlasses4Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <Bookmark6Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <DirectoryFavoriteIcon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <ClickTouchPress2Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <Camera3Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <FilePsd2Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <Cup3Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <CloudPlus2Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <File3Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <Bookmark7Icon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <FileMissingMinusIcon />
           </div>
           <div>
-            <GlassesOutlineIcon />
+            <Done2Icon />
           </div>
         </div>
         <ul className="footer">

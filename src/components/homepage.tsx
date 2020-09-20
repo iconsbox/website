@@ -8,7 +8,6 @@ import { useSetRecoilState } from "recoil"
 
 import Layout from "./layout"
 import Title from "./title"
-import Listing from "./listing"
 import List from "./list"
 import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config"
 import replaceSlashes from "../utils/replaceSlashes"
@@ -16,11 +15,13 @@ import { headerShowState } from "../Recoil/atoms"
 import { PostsProps } from "../types"
 import Hero from "../pages/home/Hero"
 import Packs from "../pages/home/Packs"
+import Feedbacks from "../pages/home/Feedbacks"
 import Integrations from "../pages/home/Integrations"
+import BlogPosts from "../pages/home/BlogPosts"
 
 const Homepage = ({ posts }: PostsProps) => {
   const setHeaderShow = useSetRecoilState(headerShowState)
-  const { basePath, blogPath } = useMinimalBlogConfig()
+  const { basePath } = useMinimalBlogConfig()
   useScrollPosition(({ currPos }) => {
     if (currPos.y < -80) {
       setHeaderShow(1)
@@ -79,12 +80,10 @@ const Homepage = ({ posts }: PostsProps) => {
 
       <Integrations />
 
-      <Title text="Blog Posts">
-        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>
-          Read all posts
-        </Link>
-      </Title>
-      <Listing posts={posts} showTags={false} />
+      <Feedbacks />
+
+      <BlogPosts posts={posts} />
+
       <List>
         <Title text="Donate" />
         You can donate us with bitcoin and this address:
