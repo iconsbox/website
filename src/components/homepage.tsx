@@ -17,11 +17,12 @@ import Hero from "../pages/home/Hero"
 import Packs from "../pages/home/Packs"
 import Feedbacks from "../pages/home/Feedbacks"
 import Integrations from "../pages/home/Integrations"
-import BlogPosts from "../pages/home/BlogPosts"
+// import BlogPosts from "../pages/home/BlogPosts"
+import Listing from "./listing"
 
 const Homepage = ({ posts }: PostsProps) => {
   const setHeaderShow = useSetRecoilState(headerShowState)
-  const { basePath } = useMinimalBlogConfig()
+  const { basePath, blogPath } = useMinimalBlogConfig()
   useScrollPosition(({ currPos }) => {
     if (currPos.y < -80) {
       setHeaderShow(1)
@@ -82,7 +83,27 @@ const Homepage = ({ posts }: PostsProps) => {
 
       <Feedbacks />
 
-      <BlogPosts posts={posts} />
+      <div className="nice-box">
+        <h3 className="nice-title">Blog posts</h3>
+        <Link
+          sx={{
+            position: "absolute",
+            top: "-1rem",
+            fontSize: "0.8rem",
+            right: "0.8rem",
+            background: "#fff",
+            padding: "0.4rem",
+            textDecoration: "none",
+          }}
+          to={replaceSlashes(`/${basePath}/${blogPath}`)}
+        >
+          Read all posts
+        </Link>
+
+        <div sx={{ padding: "0 1.6rem" }}>
+          <Listing posts={posts} showTags={false} />
+        </div>
+      </div>
 
       <List>
         <Title text="Donate" />
