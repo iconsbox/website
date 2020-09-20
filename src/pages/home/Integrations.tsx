@@ -8,6 +8,7 @@ import { BrandGithubIcon } from "@iconbox/fa5"
 import FigmaIcon from "./icons/Figma"
 import IconJar from "./icons/IconJar"
 import XDIcon from "./icons/XD"
+import PSDIcon from "./icons/PSD"
 import IllustratorIcon from "./icons/Illustrator"
 import Svelte from "./icons/Svelte"
 import Vue from "./icons/Vue"
@@ -62,17 +63,17 @@ const Integrations = () => {
             <IllustratorIcon />
           </div>
           <div>
-            <IllustratorIcon />
+            <PSDIcon />
           </div>
 
           <div>
             <Svelte />
           </div>
           <div>
-            <LogoNpmIcon />
+            <BrandGithubIcon />
           </div>
           <div>
-            <BrandGithubIcon />
+            <LogoNpmIcon />
           </div>
 
           <div>Font</div>
