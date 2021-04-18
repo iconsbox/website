@@ -49,9 +49,7 @@ const Header = () => {
           padding: "2rem",
         }}
       >
-        <HeaderTitle />
-        {headerShow ? <Navigation nav={nav} /> : null}
-
+        <HeaderTitle isDark={isDark} />
         <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
       </Flex>
     </header>

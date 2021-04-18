@@ -49,7 +49,8 @@ const Homepage = ({ posts }: PostsProps) => {
         }}
       >
         <Link
-          to={replaceSlashes(`/${basePath}/app`)}
+          to={'https://app.iconbox.space'}
+          target="_blank"
           sx={{
             display: "flex",
             padding: "0.5rem 1.6rem",

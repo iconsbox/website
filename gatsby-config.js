@@ -20,10 +20,6 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `App`,
-            slug: `/app`,
-          },
-          {
             title: `Blog`,
             slug: `/blog`,
           },
