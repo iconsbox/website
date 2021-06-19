@@ -15,6 +15,17 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: ["G-FK0DXN0V1E"],
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+        },
+      },
+    },
+    {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
@@ -30,12 +41,6 @@ module.exports = {
             url: `https://github.com/iconsbox`,
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'G-FK0DXN0V1E',
       },
     },
     `gatsby-plugin-sitemap`,
